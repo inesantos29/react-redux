@@ -1,9 +1,9 @@
 
 // Action creator
-export const selectSong = () => {
-  // Return an action 
+export const selectSong = song => {
+  // Return an action
   return {
-    type: 'SONG_SELECT',
-    payload: 'song',
-  }
-}
+    type: 'SONG_SELECTED',
+    payload: song
+  };
+};
